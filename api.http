@@ -1,0 +1,24 @@
+GET http://localhost:1234/vault
+
+### Buscar un Secret con ID
+GET http://localhost:1234/vault/67192718a0416377bb8316a6
+
+### Crear Secreto
+
+POST http://localhost:1234/vault
+Content-Type: application/json
+
+{
+    "tituloV": "iCloud",
+    "urlV": "https://www.icloud.com/",
+    "usuarioV": "jorirovi@gmail.com",
+    "passV": ""
+}
+
+### actualizar password Secret
+PATCH  http://localhost:1234/vault/671a1b2fb44a64b085eac06e
+Content-Type: application/json
+
+{
+    "passV":"" 
+}
